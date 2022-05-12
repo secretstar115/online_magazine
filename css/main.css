@@ -1,0 +1,385 @@
+@CHARSET "ISO-8859-1";
+
+/* The CSS file of the magazine. */
+body {
+	font-family: Georgia, "Times New Roman", Serif;
+	position: relative;
+	background-color: #E1E1E1;
+}
+
+#messages {
+	width: 500px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main {
+	width: 1000px;
+}
+
+#topbar {
+	width: 980px;
+	margin-bottom: 15px;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 10px;
+	border-bottom: 1px solid #5A8039;
+	border-top: 1px solid #5A8039;
+}
+
+#topbar a {
+	padding: 3px;
+	color: #5A8039;
+	text-decoration: underline;
+}
+
+#topbar a:hover {
+	color: #75CC29;
+}
+
+header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 97px;
+}
+
+#logo {
+	-webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.7));
+}
+
+h1 {
+	color: #343434;
+	font-weight: normal;
+	font-size: 21px;
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+header h2 {
+	display: inline;
+	margin-left: 49px;
+	font-size: 26px;
+	margin-top: 0px;
+	font-family: "Calisto MT", "Bookman Old Style", Bookman,
+		"Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter",
+		Georgia, serif;
+	text-shadow: 1px 1px 2px rgba(150, 150, 149, 0.5);
+	color: #363636;
+	font-style: oblique;
+}
+
+.hr {
+	color: green;
+}
+
+nav {
+	width: 1000px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+nav ul li {
+	float: left;
+	display: block;
+	position: relative;
+	margin: 0 1px;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode",
+		"Lucida Sans", Tahoma, sans-serif;
+}
+
+nav ul li a {
+	padding: 0px 9px 0 5px;
+	color: #5A8039;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #75CC29;
+	text-decoration: underline;
+}
+
+nav ul li a:selected {
+	color: #f00;
+}
+
+nav ul li ul {
+	position: absolute;
+	left: 0;
+	display: none;
+	margin: 0 0 0 -1px;
+	padding: 0;
+	list-style: none;
+	border-left: 1px solid #5A8039;
+	border-right: 1px solid #5A8039;
+	border-bottom: 4px solid #5A8039;
+	background-color: #E1E1E1;
+	z-index: 999;
+}
+
+nav ul li ul li {
+	width: 100px;
+	float: left;
+}
+
+nav ul li ul a {
+	display: block;
+	height: 15px;
+	padding: 8px 5px;
+	color: #666;
+}
+
+nav ul li ul a:hover {
+	text-decoration: underline;
+}
+
+#logo {
+	width: 30%;
+}
+
+.contents {
+	background-color: white;
+	padding: 15px;
+	margin-top: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-bottom: 3px solid #5A8039;
+}
+
+.article_headline a {
+	color: #5A8039;
+}
+
+.contents h1,.slider h1 {
+	font-weight: normal;
+	font-size: 20px;
+	color: white;
+	font-family: Georgia, "Times New Roman", Serif;
+}
+
+.contents img {
+	max-height: 300px;
+}
+
+.contents p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.comment {
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: rgba(141, 198, 63, 0.7);
+}
+
+footer {
+	text-align: center;
+	margin-top: 15px;
+}
+
+/* --       Start slider CSS -- */
+.slider h1,.slider h2 {
+	text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);
+}
+
+.slider h2 {
+	font-family: Georgia, "Times New Roman", Serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: white
+}
+
+.slider {
+	width: 980px;
+	height: 400px;
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-bottom: 3px solid #5A8039;
+}
+
+.slider #headline {
+	max-width: 385px;
+	float: left;
+	margin-right: 5px;
+	position: relative;
+}
+
+.small_thumbnail {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 292px;
+	height: 200px;
+}
+
+.overlay a {
+	text-decoration: none;
+}
+
+.overlay a:hover {
+	text-decoration: underline;
+}
+
+.slider {
+	padding: 10px
+}
+
+.slider .text {
+	position: absolute;
+}
+
+.slider #other_articles {
+	width: 509px;
+	float: left;
+	padding-left: 5px;
+	border-left: 1px solid #5A8039;
+}
+
+.slider #top {
+	width: 584px;
+	height: 195px;
+}
+
+.slider #bottom {
+	width: 586px;
+	height: 195px;
+	margin-top: 10px;
+}
+
+.sidebar_image {
+	max-width: 384px;
+	/* margin: 10px; */
+}
+
+/* --       End slider CSS -- */
+
+/* --       Start Featured panel CSS -- */
+#bottom_panels {
+	position: relative;
+	height: 550px;
+}
+
+#featured {
+	font-family: Georgia, "Times New Roman", Serif;
+	float: left;
+	border-bottom: 3px solid #5A8039;
+}
+
+.headlines_panel ul li a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #5A8039;
+}
+
+.headlines_panel ul li a:hover {
+	text-decoration: underline;
+}
+
+.headlines_panel ul {
+	list-style: none;
+	margin: 0;
+	padding: 1px;
+}
+
+#recent_cat {
+	float: right;
+	border-bottom: 3px solid #5A8039;
+}
+
+.ui-button-text {
+	font-size: inherit !important;
+}
+
+#radio {
+	display: inherit;
+	margin-left: 73px;
+	font-size: .8em !important;
+}
+
+.headlines_panel {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 15px;
+	width: 450px;
+}
+
+/* --       End Featured panel CSS -- */
+textarea {
+	resize: none;
+}
+
+.member_panel table,th,td {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #5A8039;
+	min-width: 107px;
+}
+
+.member_panel th {
+	background-color: #5A8039;
+	color: white;
+}
+
+.member_panel a {
+	color: #5A8039;
+}
+
+.member_panel a:hover {
+	color: #75CC29;
+}
+
+#panel {
+	height: 300px;
+}
+
+#panel img {
+	float: left;
+}
+
+#edit_panel {
+	padding: 20px;
+	border: 1px solid green;
+	margin-left: 769px;
+}
+
+#comment_form {
+	margin-top: 15px;
+}
+
+.writer_panel button {
+	margin-top: 15px;
+}
+
+/* Some CSS for the JQuery UI forms */
+label,input {
+	display: block;
+}
+
+input.text {
+	margin-bottom: 12px;
+	width: 95%;
+	padding: .4em;
+}
+
+fieldset {
+	padding: 0;
+	border: 0;
+	margin-top: 25px;
+}
+
+.ui-dialog .ui-state-error {
+	padding: .3em;
+}
+
+.validateTips {
+	border: 1px solid transparent;
+	padding: 0.3em;
+}
